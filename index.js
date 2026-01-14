@@ -44,7 +44,8 @@ app.use(notFound)
 // global error handaling
 app.use(erroHanddling)
 // connecting to mongoose
-mongoose.connect( process.NODE_ENV === 'development'? process.env.MONGO_URI_DEV : process.env.MONGO_URI_PRO)
+mongoose.connect( process.env.NODE_ENV == 'development'? process.env.MONGO_URI_DEV :
+     process.env.MONGO_URI_PRO)
    .then(()=> console.log('✅connect mongobd locally'))
    .catch((err) => console.log('❌no connected mondb locally.' , err.message))
 
