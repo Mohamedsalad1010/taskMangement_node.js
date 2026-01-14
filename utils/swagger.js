@@ -12,7 +12,8 @@ const options = {
     },
     servers: [
       {
-        url: process.env.NODE_ENV == 'development'? 'http://localhost:3000' : 'https://taskmangement-node-js.onrender.com'
+        url: process.env.NODE_ENV == 'development' ? 'http://localhost:3000' : 
+        'https://taskmangement-node-js.onrender.com'
       }
     ],
     components: {
